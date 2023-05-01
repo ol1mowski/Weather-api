@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="clouds one"><img src="./img/cloud.png" alt="cloud photo"></div>
+    <div class="clouds two"><img src="./img/cloud.png" alt="cloud photo"></div>
+    <div class="clouds three"><img src="./img/cloud.png" alt="cloud photo"></div>
+    <div class="clouds four"><img src="./img/cloud.png" alt="cloud photo"></div>
+    <div class="weatherContainer">
+        <div class="weatherContainer__box">
+            <div class="weatherContainer__city">
+                Pobieranie danych...
+            </div>
+            <div class="weatherContainer__temp">
+                <i class="fa-solid fa-temperature-quarter fa-xl"></i>
+                <span class="weatherContainer__temp__temp">Pobieranie danych...</span> <br />
+            </div>
+            <div class="weatherContainer__temp__sky">
+                <i class="fa-solid fa-cloud"></i>
+                <span class="weatherContainer__sky__description">Pobieranie danych...</span>
+            </div>
+            <div class="weatherContainer__wind">
+                <i class="fa-solid fa-wind fa-xl"></i>
+                <span class="weatherContainer__wind__data">Pobieranie danych...</span> 
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

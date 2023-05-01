@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:ital,wght@1,500&family=Roboto:wght@500&family=Shantell+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+}
+
+$fontSizeBig: 3rem;
+
+@mixin weatherElementCity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $fontSizeBig;
+    width: 100%;
+    height: 10vh;
+}
+
+@mixin weatherElements {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: $fontSizeBig;
+    width: 100%;
+    height: 10vh;
+}
+
+body {
+    overflow: hidden;
+}
+
+.weatherContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/weather.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherContainer__box {
+    font-size: $fontSizeBig;
+    padding: 10vh 20px;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.clouds {
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+}
+
+.one {
+    left: 20vw;
+    animation: cloudsRun infinite 53s;
+}
+.two {
+    animation: cloudsRun infinite 53s;
+    top: 29vh;
+    left: -10vw;
+}
+.three {
+    animation: cloudsRun infinite 53s;
+    right: 30vw;
+}
+.four {
+    animation: cloudsRun infinite 53s;
+    right: 30vw;
+    top: 50vh;
+}
+
+@keyframes cloudsRun {
+    50% {
+        transform: translate(70vw, 20vh);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.weatherContainer__city {
+    @include weatherElementCity;
+}
+
+.weatherContainer__wind, .weatherContainer__temp, .weatherContainer__temp__sky {
+    @include weatherElements;
+}
