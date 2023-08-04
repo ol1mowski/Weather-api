@@ -2,8 +2,9 @@
 
 Weather API JS is a JavaScript application that allows you to fetch and display weather data from a weather API on a web page.
 
+![Projekt bez nazwy (1)](https://github.com/ol1mowski/Weather-api/assets/101707516/1f922bd9-3cf7-4856-878d-9d66b40c01c1)
 
-![image](https://github.com/ol1mowski/Weather-api/assets/101707516/e15edb94-66da-4f69-a264-2657babebd76)
+
 
 ## Features
 
